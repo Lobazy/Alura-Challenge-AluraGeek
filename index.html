@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--icons-->
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="img/corações.png" class="heart">
+            <div class="logo">Alura Geek</div>
+            <img src="img/corações.png" class="heart">
+        </div>
+    </header>
+
+    <main>
+            <section class="principal">
+                <div class="interface">
+                    <div class="txtprincipal">
+                        <h1 class="main-title">Produtos Disponíveis</h1>
+                    </div><!--txt principal-->
+
+                    <div class="cards-container">
+                        <div class="card">
+                            <img src="img/Karasuno.jpg" alt="">
+                            <div class="card-info">
+                                <p>Ecobag Karasuno Club</p>
+                            </div><!--card info-->
+                            <div class="card-value">
+                                <p>Preço: 50,00</p>
+                                <i class="bi bi-trash"></i>
+                            </div><!--card value-->
+                            <button class="buy-button">Comprar</button>
+                        </div><!--card-->
+
+                        <div class="card">
+                            <img src="img/jujutsu.jpg" alt="">
+                            <div class="card-info">
+                                <p>Ecobag Jujutsu no Kaisen</p>
+                            </div><!--card info-->
+                            <div class="card-value">
+                                <p>Preço: 60,00</p>
+                                <i class="bi bi-trash"></i>
+                            </div><!--card value-->
+                            <button class="buy-button">Comprar</button>
+                        </div><!--card-->
+
+                        <div class="card">
+                            <img src="img/Naruto.jpg" alt="">
+                            <div class="card-info">
+                                <p>Ecobag Naturo</p>
+                            </div><!--card info-->
+                            <div class="card-value">
+                                <p>Preço: 65,00</p>
+                                <i class="bi bi-trash"></i>
+                            </div><!--card value-->
+                            <button class="buy-button">Comprar</button>
+                        </div><!--card-->
+
+                        <div class="card">
+                           <img src="img/Shingeki.jpg" alt="">
+                            <div class="card-info">
+                                <p>Ecobag Levi </p>
+                            </div><!--card info-->
+                            <div class="card-value">
+                                <p>Preço: 55,00</p>
+                                <i class="bi bi-trash"></i>
+                            </div><!--card value-->
+                            <button class="buy-button">Comprar</button>
+                        </div><!--card-->
+
+                        <div class="card">
+                            <img src="img/kiki.jpg" alt="">
+                            <div class="card-info">
+                                <p>Ecobag Kiki's Delivery Service</p>
+                            </div><!--card info-->
+                            <div class="card-value">
+                                <p>Preço: 40,00</p>
+                                <i class="bi bi-trash"></i>
+                            </div><!--card value-->
+                            <button class="buy-button">Comprar</button>
+                        </div><!--card-->
+
+                        <div class="card">
+                            <img src="img/Mononoke.jpg" alt="">
+                            <div class="card-info">
+                                <p>Ecobag Princess Mononoke</p>
+                            </div><!--card info-->
+                            <div class="card-value">
+                                <p>Preço: 45,00</p>
+                                <i class="bi bi-trash"></i>
+                            </div><!--card value-->
+                            <button class="buy-button">Comprar</button>
+                        </div><!--card-->
+                    </div><!--cards-container-->
+                </div><!--interface-->
+                <div id="produtos"></div>
+            </section><!--principal-->
+            
+            <section class="add-product-section">
+                <h2 class="add-product-title">Adicionar Produto</h2>
+                <form class="add-product-form" action="http://localhost:3000/produtos" method="POST">
+                    <div class="form-group">
+                    <input type="text" id="product-name" name="product-name" placeholder="Nome do Produto" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="number" id="product-price" name="product-price" placeholder="Valor do Produto" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="file" id="product-image" name="product-image" title="Selecione uma imagem" required>
+                    <label for="product-image"></label>
+                  </div>
+                  <div class="form-actions">
+                    <div class="btenviar">
+                      <input type="submit" value="Adicionar">
+                    </div>
+                    <div class="btcancelar">
+                      <button type="button" class="btn btn-secondary">Cancelar</button>
+                    </div>
+                  </div>
+                </form>
+              </section>
+              
+    </section><!--Principal-->
+    </main>
+    <script src="js/api.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/add.js"></script>
+
+</body>
+
+<footer>
+    <p>&copy; 2024 Alura Geek. Desenvolvido por Vitória Lobo.</p>
+</footer>
+</body>
+
+</html>

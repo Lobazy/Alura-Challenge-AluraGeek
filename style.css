@@ -1,0 +1,278 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #ff0084;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+  
+  .heart {
+    max-width: 100px;
+  }
+  /* Main */
+  .txtprincipal{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .main-title{
+    font-size: 2.5rem;
+  }
+
+  .card {
+    border: 2px solid #ff69b4; /* Borda rosa */
+    border-radius: 10px; /* Adiciona um pouco de arredondamento */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    margin-bottom: 20px; /* Adiciona espaçamento entre os cards */
+  }
+  
+  .principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .interface {
+    max-width: 1200px;
+    width: 100%;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  
+  .card {
+    border: 2px solid #ff69b4;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .card-info {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .card-value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .card-value p {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .card-value i {
+    color: red;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .buy-button {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  /* Form */
+  
+  .add-product-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .add-product-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .add-product-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    flex: 1;
+    background-color: pink;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #000; /* Alterado para preto mais forte */
+  }
+  
+  .form-group textarea {
+    resize: none;
+    max-height: 150px;
+  }
+  
+  .currency-symbol {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000; /* Alterado para preto mais forte */
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .btenviar input,
+  .btcancelar button {
+    background-color: #ff0084;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btenviar input:hover,
+  .btcancelar button:hover {
+    background-color: #e6b3e6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+
+  /* Estilos do rodapé */
+  footer {
+    background-color: #ff0084;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+ /* Estilos responsivos */
+@media (max-width: 767px) {
+    header {
+      padding: 0.5rem;
+    }
+  
+    .logo {
+      font-size: 1.2rem;
+    }
+  
+    .heart {
+      max-width: 30px;
+    }
+  
+    .principal {
+      padding: 1rem;
+    }
+  
+    .interface {
+      padding: 1rem;
+    }
+  
+    .main-title {
+      font-size: 1.5rem;
+    }
+  
+    .cards-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    .card img {
+      max-width: 150px;
+    }
+  
+    .add-product-section {
+      padding: 1rem;
+    }
+  
+    .add-product-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  
+    .add-product-form {
+      padding: 1rem;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2rem;
+    }
+  }
